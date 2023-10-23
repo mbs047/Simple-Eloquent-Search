@@ -14,8 +14,6 @@ use Illuminate\Support\Str;
 
 trait Searchable
 {
-    protected $searchable = [];
-
     public function setSearchable(array $searchable)
     {
         $this->searchable = $searchable;
