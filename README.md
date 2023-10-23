@@ -2,7 +2,7 @@
 A laravel package to search via your models .
 
 installation : 
-`composer require devhereco/SimpleEloquentSearch`
+`composer require devhereco/simple-eloquent-search`
 
 Usage :
 - use `Searchable` trait in your model
