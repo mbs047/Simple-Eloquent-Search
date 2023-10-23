@@ -31,5 +31,7 @@
             "type": "vcs",
             "url": "https://github.com/devhereco/Simple-Eloquent-Search"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
