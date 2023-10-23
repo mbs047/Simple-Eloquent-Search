@@ -22,9 +22,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "laravel/framework": "^10.0",
-        "illuminate/support": "*",
-        "illuminate/database": "*"
+        "laravel/framework": "^10.0"
     },
     "repositories": [
         {
@@ -32,6 +30,5 @@
             "url": "https://github.com/devhereco/Simple-Eloquent-Search"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "minimum-stability": "dev"
 }
