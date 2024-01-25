@@ -21,3 +21,7 @@ class User extends Model {
   public function posts(){
     return $this->hasMany(Post::class);
   }
+}
+
+// Calling search method
+Model::search('ABC')->get();
