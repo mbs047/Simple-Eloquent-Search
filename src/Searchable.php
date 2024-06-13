@@ -31,10 +31,10 @@ trait Searchable
                 if (str_contains($searchable, '.')) {
                     [$relation, $column] = explode('.', $searchable);
                     $query->orWhereHas($relation, function ($subQuery) use ($column, $term) {
-                        $subQuery->where($column, 'like', "%$term%");
+                        $subQuery->whereRaw('LOWER(' . $column . ') LIKE ?', ['%' . strtolower($term) . '%']);
                     });
                 } else {
-                    $query->orWhere($searchable, 'like', "%$term%");
+                    $query->whereRaw('LOWER(' . $column . ') LIKE ?', ['%' . strtolower($term) . '%']);
                 }
             }
         });
