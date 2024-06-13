@@ -34,7 +34,7 @@ trait Searchable
                         $subQuery->whereRaw('LOWER(' . $column . ') LIKE ?', ['%' . strtolower($term) . '%']);
                     });
                 } else {
-                    $query->whereRaw('LOWER(' . $column . ') LIKE ?', ['%' . strtolower($term) . '%']);
+                    $query->orWhereRaw('LOWER(' . $searchable . ') LIKE ?', ['%' . strtolower($term) . '%']);
                 }
             }
         });
